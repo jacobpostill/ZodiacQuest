@@ -39,6 +39,10 @@ User.init(
         len: [8],
       },
     },
+    friends: {
+      type: DataTypes.ARRAY(DataTypes.INTEGER),
+      defaultValue: []
+    },
   },
   {
     hooks: {
@@ -53,7 +57,7 @@ User.init(
       },
     },
     sequelize,
-    timestamps: false,
+    timestamps: true,
     // prevent pluralisation
     freezeTableName: true,
     underscored: true,

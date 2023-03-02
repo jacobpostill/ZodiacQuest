@@ -1,4 +1,6 @@
 const User = require('./User');
+const FriendRequest = require('./friend');
+
 /// const Project = require('./Project');
 
 // User.hasMany(Project, {
@@ -11,6 +13,6 @@ const User = require('./User');
 // });
 
 // Various database relationships go here
-module.exports = { User, 
+module.exports = { User, FriendRequest
   //Project 
 };

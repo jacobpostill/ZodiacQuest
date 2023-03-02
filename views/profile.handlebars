@@ -24,7 +24,25 @@
   </tbody>
 </table>
 </div>
-
+ 
+ <!--friends request-->
+<div>
+  <h1>Friend Request</h2>
+  <div>
+    <h2>Send Friend Request</h2>
+      <form id="send-request-form">
+        <div>
+          <label for="receiver-username">Receiver's Username:</label>
+          <input type="text" class="form-control" id="receiver-id" name="receiverUsername" required>
+          <button type="submit" class="btn btn-primary">Send Request</button>
+        </div>
+      </form>
+  </div>
+  <div>
+    <h2>View Friend Requests</h2>
+      <ul id="friend-request"></ul>
+  </div>
+</div>
 
  <!--friends stats-->
 <div class="col-sm-4">
